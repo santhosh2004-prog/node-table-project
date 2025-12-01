@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Entry</title>
+  <link href="style.css"   rel="stylesheet"/>
+</head>
+<body>
+   <div class="container">
+    <h2>Sales Data Entry</h2>
+    
+    <table id="salesTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Sales</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="number" id="idInput" placeholder="Enter ID"></td>
+          <td><input type="text" id="nameInput" placeholder="Enter Name"></td>
+          <td><input type="number" id="salesInput" placeholder="Enter Sales"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="btn btn-submit" onclick="addEntry()">Submit</button>
+    <button class="btn btn-analyze" onclick="analyzeData()">Analyze</button>
+
+    <div id="analysis"></div>
+  </div>
+
+  <script  src="script.js">
+    
+  </script>
+</body>
+</html>
